@@ -46,10 +46,11 @@
 
 int firstNum;
 int secondNum;
-
 int result = (firstNum * secondNum);
 
-void setup() {
+String multString;
+
+  void setup() {
   size(800, 800);
   background(0);
 
@@ -63,8 +64,10 @@ void setup() {
 
 void draw() {
 
-  result = firstNum * secondNum; 
+  result = firstNum * secondNum;
 
-    text(result, width /2, height/2);
-    println(result);
+  multString = nf(firstNum) + "x" + nf(secondNum) + "=" + nf(result);
+  
+    text(multString, width /2, height/2);
+  println(result);
 }
