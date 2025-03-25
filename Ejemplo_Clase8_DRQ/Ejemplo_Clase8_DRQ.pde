@@ -30,7 +30,7 @@
 
 //}
 
-//ACTIVIDAD PSEUDO CODIGO
+//ACTIVIDAD PSEUDO CODIGO 1
 
 //1) Pseudo Codigo:
 //Operación matemática detallada:
@@ -44,30 +44,62 @@
 
 //2) Implementación del Pseudo codigo
 
-int firstNum;
-int secondNum;
-int result = (firstNum * secondNum);
+//int firstNum;
+//int secondNum;
+//int result = (firstNum * secondNum);
 
-String multString;
+//String multString;
 
-  void setup() {
-  size(800, 800);
-  background(0);
+ // void setup() {
+ // size(800, 800);
+ // background(0);
 
-  textAlign(CENTER, CENTER);
-  textSize(40);
+//  textAlign(CENTER, CENTER);
+//  textSize(40);
 
 
-  firstNum = 3;
-  secondNum = 7;
-}
+ // firstNum = 3;
+ // secondNum = 7;
+//}
 
-void draw() {
+//void draw() {
 
-  result = firstNum * secondNum;
+ // result = firstNum * secondNum;
 
-  multString = nf(firstNum) + "x" + nf(secondNum) + "=" + nf(result);
+ // multString = nf(firstNum) + "x" + nf(secondNum) + "=" + nf(result);
   
-    text(multString, width /2, height/2);
-  println(result);
+//    text(multString, width /2, height/2);
+//  println(result);
+//}
+
+//ACTIVIDAD PSEUDO CODIGO 2
+
+//1.  Cree una variable del tipo int  (ejemplo: numExam) que sea el número que quiere comprobar si es igual o mayor a 10
+//2.  Luego cree un comprobante "if" donde compruebe que el numero de la variable es igual o mayor que 10
+//"(numExam >= 10) {"
+//3.  Imprima en la consola el resultado de la comprobación de la variable
+//print("El número es: "  + numExam);
+//4.  Después si el resultado de su comprobación es menor que 10, utilice el, comprobate else if
+//} else if (numExam < 10) {
+//5.    Finalmente imprima un mensaje que indique que la variable  no cumple con los requisitos del comprobante
+//  print("El número no es mayor que 10");
+//}
+//}
+
+
+int numExam;
+
+ void setup() {
+ // size(800, 800);
+ // background(0);
+
+  numExam = 9;
+
+if(numExam >= 10) {
+
+print("El número es: "  + numExam);
+} else if (numExam <= 10) {
+  
+  print("El número no es mayor que 10");
+}
 }
