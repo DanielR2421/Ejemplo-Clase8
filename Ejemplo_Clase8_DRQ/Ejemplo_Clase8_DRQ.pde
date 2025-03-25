@@ -87,19 +87,51 @@
 //}
 
 
-int numExam;
+//int numExam;
 
- void setup() {
+// void setup() {
  // size(800, 800);
  // background(0);
 
-  numExam = 9;
+//  numExam = 9;
 
-if(numExam >= 10) {
+//if(numExam >= 10) {
 
-print("El número es: "  + numExam);
-} else if (numExam <= 10) {
+//print("El número es: "  + numExam);
+//} else if (numExam <= 10) {
   
-  print("El número no es mayor que 10");
+//  print("El número no es mayor que 10");
+//}
+//}
+
+//ACTIVIDAD PSEUDO CODIGO 3
+
+int a;
+int remanente;
+boolean esPar;
+
+void setup() {
+   size(500, 500);
+  background(255);
+  
+  
+ a = 9;
+//El modulo identifica el remanente de una división y ejecturar el numero que sea par y su división
+//Cualquier numero par tiene un remanente de 0 si se divide entre 2
+ remanente = a % 2;
+ println(remanente);
 }
+
+void draw() {
+ 
+ if (remanente == 0){
+   print(" El numero es PAR ");
+rect(10, 10, 10, 10);
+
+ }else if (remanente !=0){
+ print(" El numero es IMPAR ");
+ ellipse(50, 50, 50, 50);
+ 
+ }
+
 }
