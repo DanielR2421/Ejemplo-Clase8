@@ -50,24 +50,24 @@
 
 //String multString;
 
- // void setup() {
- // size(800, 800);
- // background(0);
+// void setup() {
+// size(800, 800);
+// background(0);
 
 //  textAlign(CENTER, CENTER);
 //  textSize(40);
 
 
- // firstNum = 3;
- // secondNum = 7;
+// firstNum = 3;
+// secondNum = 7;
 //}
 
 //void draw() {
 
- // result = firstNum * secondNum;
+// result = firstNum * secondNum;
 
- // multString = nf(firstNum) + "x" + nf(secondNum) + "=" + nf(result);
-  
+// multString = nf(firstNum) + "x" + nf(secondNum) + "=" + nf(result);
+
 //    text(multString, width /2, height/2);
 //  println(result);
 //}
@@ -90,8 +90,8 @@
 //int numExam;
 
 // void setup() {
- // size(800, 800);
- // background(0);
+// size(800, 800);
+// background(0);
 
 //  numExam = 9;
 
@@ -99,39 +99,76 @@
 
 //print("El número es: "  + numExam);
 //} else if (numExam <= 10) {
-  
+
 //  print("El número no es mayor que 10");
 //}
 //}
 
 //ACTIVIDAD PSEUDO CODIGO 3
 
-int a;
-int remanente;
-boolean esPar;
+//int a;
+//int remanente;
+//boolean esPar;
 
-void setup() {
-   size(500, 500);
-  background(255);
-  
-  
- a = 9;
-//El modulo identifica el remanente de una división y ejecturar el numero que sea par y su división
-//Cualquier numero par tiene un remanente de 0 si se divide entre 2
- remanente = a % 2;
- println(remanente);
+//void setup() {
+//  size(500, 500);
+ // background(255);
+
+
+//  a = 9;
+  //El modulo identifica el remanente de una división y ejecturar el numero que sea par y su división
+  //Cualquier numero par tiene un remanente de 0 si se divide entre 2
+//  remanente = a % 2;
+//  println(remanente);
+//}
+
+//void draw() {
+
+//  if (remanente == 0) {
+//    print(" El numero es PAR ");
+ //   rect(10, 10, 10, 10);
+//  } else if (remanente !=0) {
+//    print(" El numero es IMPAR ");
+ //   ellipse(50, 50, 50, 50);
+//  }
+//}
+
+//EVENTOS PARA LA SIGUIENTE ACTIVIDAD
+//MousePressed
+
+int posX;
+int posY;
+
+void setup(){
+  size(500, 500);
+  background(0);
 }
 
-void draw() {
- 
- if (remanente == 0){
-   print(" El numero es PAR ");
-rect(10, 10, 10, 10);
+void draw(){
+}
 
- }else if (remanente !=0){
- print(" El numero es IMPAR ");
+void mousePressed() {
+//print("El mouse se presiono")
+}
+
+void mouseReleased() {
+//print("El mouse dejo de presionar")
+}
+
+void mouseMoved() {
+//print("El mouse se movio")
+}
+
+void mouseDragged() {
+}
+
+void keyPressed() {
+  //Aparezca la elipse cudao se presiona la tecla c
  ellipse(50, 50, 50, 50);
+ println("La tecla se presiono");
  
- }
+}
 
+void keyReleased() {
+ ellipse(50, 50, 50, 50);
 }
