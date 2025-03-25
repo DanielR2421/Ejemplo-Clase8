@@ -163,9 +163,28 @@ void draw(){
 //}
 
 void keyPressed() {
+  posX = 10;
   //Aparezca la elipse cudao se presiona la tecla c
- ellipse(50, 50, 50, 50);
- println("La tecla se presiono");
+ if(keyCode == 'C'){
+   println("La tecla C se preseiono");
+   ellipse(50, 50, 50, 50);
+ } else if (keyCode == ' '){
+   println("La tecla espacio se preseiono");
+   rect(50, 50, 50, 50);
+ }else if (keyCode == UP){
+   println("La flecha hacia arriba se preseiono");
+ }else if (keyCode == DOWN){
+   println("La flecha hacia abajo se preseiono");
+ }else {
+ println("Ninguna tecla se presiono");
+ }
+   
+   
+   
+   
+   
+//   ellipse(50, 50, 50, 50);
+// println("La tecla se presiono");
  
 }
 
