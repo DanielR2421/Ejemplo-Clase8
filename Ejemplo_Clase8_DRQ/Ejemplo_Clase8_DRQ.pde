@@ -147,20 +147,20 @@ void setup(){
 void draw(){
 }
 
-void mousePressed() {
+//void mousePressed() {
 //print("El mouse se presiono")
-}
+//}
 
-void mouseReleased() {
+//void mouseReleased() {
 //print("El mouse dejo de presionar")
-}
+//}
 
-void mouseMoved() {
+//void mouseMoved() {
 //print("El mouse se movio")
-}
+//}
 
-void mouseDragged() {
-}
+//void mouseDragged() {
+//}
 
 void keyPressed() {
   //Aparezca la elipse cudao se presiona la tecla c
@@ -169,6 +169,6 @@ void keyPressed() {
  
 }
 
-void keyReleased() {
- ellipse(50, 50, 50, 50);
-}
+//void keyReleased() {
+ //ellipse(50, 50, 50, 50);
+//}
